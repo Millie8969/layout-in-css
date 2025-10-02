@@ -8,8 +8,32 @@
     <style>
       body {
         display: grid;
+        
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 20% 65% 10%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas:
+        "header header header header"
+        "nav main main main"
+        "footer footer footer footer";
       }
-      /* Doe hier jouw ding! */
+
+      header{
+        grid-area: header;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer{
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-1">
